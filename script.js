@@ -80,7 +80,7 @@ function addWeatherInfoToPage(data) {
                     'source': 'point', 
                     'layout': {
                         'icon-image': 'cat',
-                        'icon-size': 0.9
+                        'icon-size': 0.8
                     }
                 });
             }
@@ -97,8 +97,6 @@ function KtoC(temp) {
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const location = search.value;
-    console.log(location);
-
     if (location) {
         getWeatherByLocation(location)
     }
